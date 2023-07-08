@@ -1,0 +1,29 @@
+.info-user {
+  width: 50%;
+  height: 400px;
+  transform: translate(-50%, -20%);
+  padding: 20px;
+}
+.info-user h2 {
+  color: gray;
+  padding-bottom: 10px;
+}
+.info-user hr {
+  width: 150px;
+  border: 3px solid red;
+  border-radius: 5px;
+}
+.user-id {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #000;
+}
+.user-name,
+.user-pass {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #000;
+}
