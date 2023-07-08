@@ -21,6 +21,7 @@
     let label1 = ["250px","270px"];
     let label2 = ["320px","340px"];
     let color = ["#fff","gray"];
+    let type = ["password","text"];
     $(document).ready(() =>{
         for(let i = 0;i<document.querySelector(".formLogin-row1").children.length;i++){
             document.querySelector(".formLogin-row1").children[i].onfocus = (e) =>{
@@ -38,7 +39,9 @@
                 
             }
         }
-            
+        $(".fa-eye").click(() =>{
+            $(".formLogin-row1 input:eq(1)").attr("type",type.reverse()[0]) 
+        })    
             
         
             
