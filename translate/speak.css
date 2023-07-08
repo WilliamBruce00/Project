@@ -1,0 +1,48 @@
+table{
+    border-collapse: collapse;
+   
+}
+th{
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+textarea{
+    font-size: 20px;
+    padding: 20px 20px;
+    height: 170px;
+}
+img{
+    width: 30px;
+    height: 30px;
+}
+button{
+    position: absolute;
+    outline: none;
+    border: none;
+    background-color: white;
+    top:10px;
+    right: 48.5%;
+}
+button:hover{
+    border-radius: 50%;
+    box-shadow: 0 0 5px gray;
+}
+textarea:disabled{
+    color: black;
+}
+.btn{
+    position: absolute;
+    top:220px;
+    left:170px;
+    width: 40px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: white;
+}
+.btn:hover{
+    border-radius: 50%;
+    box-shadow: 0 0 5px gray;
+}

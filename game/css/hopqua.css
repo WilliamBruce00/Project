@@ -1,0 +1,71 @@
+.container{
+    width: 760px;
+    height: 700px;
+    
+    margin: auto;
+}
+#prod1,#prod2,#prod3,#prod4,#prod5,#prod6,#prod7,#prod8,#prod9{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 20px 25px;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+
+button{
+    background-color: white;
+    border: none;
+    outline: none;
+}
+
+    
+
+#qua1{
+    display: none;
+}
+#qua2{
+    display: none;
+}
+#qua6{
+    display: none;
+}
+#qua7{
+    display:  none;
+}
+.tieude{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+#turn{
+    display: inline-block;
+    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+}
+.box3{
+    width: 200px;
+    height: 60px;
+    background-color: white;
+    box-shadow:  0 0 5px gray;
+    position: absolute;
+    top:30px;
+    left: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button:hover{
+    border: 1px solid black;
+    border-radius: 50px;
+}
+body{
+    background: url(../img/ko.jpg);
+    background-size: 100%;
+}

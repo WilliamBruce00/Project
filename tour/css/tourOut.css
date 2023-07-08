@@ -1,0 +1,351 @@
+.box-tour-In {
+  width: 100%;
+  height: 400px;
+  background: url(../img/Fuji_415251361.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0px -330px;
+}
+.title {
+  width: 67%;
+  height: 110px;
+  background-color: rgb(0, 0, 0, 0.5);
+  margin: 0 auto;
+  transform: translateY(264%);
+  padding-left: 25px;
+}
+.title h1 {
+  padding-top: 20px;
+  margin: 0px;
+  color: white;
+  font-family: "Montserrat", "Open Sans", sans-serif;
+}
+.title p {
+  margin: 10px 0px;
+  color: white;
+  font-weight: 100;
+}
+
+.search-tour {
+  width: 100%;
+  height: 82px;
+  background-color: #e5e5e5;
+}
+.search-content {
+  width: 68.5%;
+  height: 100%;
+
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 35% 13% 13% 13% 14%;
+  column-gap: 31px;
+}
+.search-content input,
+.search-content select {
+  height: 46px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+.search-content input:nth-child(5) {
+  background-color: #ff891e;
+  color: white;
+}
+.tour-main {
+  padding-top: 20px;
+  width: 68.5%;
+
+  /* background-color: whitesmoke; */
+  margin: 0 auto;
+  padding-left: 0px;
+}
+.tour-main span:first-child {
+  font-size: 15px;
+  font-weight: bold;
+}
+.tour-main span {
+  font-size: 14px;
+}
+.tours {
+  display: flex;
+  margin: 20px 0px;
+  border-bottom: 1px solid gray;
+}
+.list-tour {
+  margin-top: 20px;
+  width: 100%;
+}
+.tours-img {
+  width: 35.6%;
+  height: 100%;
+  overflow: hidden;
+}
+.tours-img img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s linear;
+}
+.tours-info {
+  width: 44%;
+  height: 100%;
+
+  padding-left: 20px;
+}
+.tours-info a {
+  text-decoration: none;
+  transition: all 0.25s linear;
+}
+.tours-info h3 {
+  color: #05558a;
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-size: 16px;
+}
+.tours-info h5 {
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-weight: 600;
+}
+.tours-info p {
+  margin: 2px;
+  font-size: 14px;
+  font-weight: 200;
+}
+.tours-time {
+  width: 20.4%;
+  height: 100%;
+
+  text-align: center;
+}
+.tours-time a {
+  padding-top: 10px;
+  display: block;
+  text-decoration: none;
+  background-color: #ff891e;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  width: 170px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 17px;
+  border-radius: 4px;
+  transition: all 0.25s linear;
+}
+.tours-time a:hover {
+  opacity: 0.5;
+}
+.tours-time p {
+  background-color: #ffff;
+  box-shadow: 0 0 4px gray;
+  width: 100px;
+  padding: 5px 10px;
+  margin: 10px auto;
+  color: gray;
+  font-weight: 100;
+}
+.tours-time span {
+  font-size: 15px;
+  font-weight: 100;
+  border-bottom: 1px solid gray;
+}
+.tour-nav {
+  width: 100%;
+  height: 200px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tour-nav a {
+  margin: 0 12px;
+  color: black;
+  text-decoration: none;
+  font-weight: 200;
+
+  padding: 5px 15px;
+  transition: all 0.5s linear;
+}
+.tour-nav a.active {
+  color: #ff891e;
+}
+.tour-nav a:hover {
+  color: #ff891e;
+}
+.tours-img img:hover {
+  transform: scale(1.3);
+  opacity: 0.6;
+}
+.tours-info a:hover {
+  opacity: 0.6;
+}
+.tours a:nth-child(4) {
+  color: black;
+  background-color: #fff;
+  font-size: 14px;
+  border-bottom: 1px solid black;
+  width: 70px;
+  padding-bottom: 0px;
+  line-height: 37px;
+  border-radius: 0%;
+}
+.ctrl {
+  background-color: #ffff;
+  box-shadow: 0 0 5px gray;
+}
+.seeMore {
+  position: fixed;
+  top: -25%;
+  left: 50%;
+  width: 60%;
+  height: 120px;
+  background-color: black;
+  box-shadow: 0 0 5px gray;
+  transform: translate(-50%, -50%);
+  border-radius: 7px;
+  column-gap: 15px;
+
+  transition: all 0.25s linear;
+}
+.col {
+  width: 24%;
+  height: 100%;
+  font-weight: 600;
+  text-align: center;
+  font-family: var(--font);
+  float: left;
+  color: white;
+}
+
+.col p:nth-child(2) {
+  color: #ff891e;
+  font-weight: bold;
+}
+.col a {
+  text-decoration: none;
+  background-color: #ff891e;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+  transition: all 0.25s linear;
+}
+.col a:hover {
+  opacity: 0.7;
+}
+.row {
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(27, 24, 24);
+  border-radius: 7px;
+}
+.row i {
+  padding-right: 10px;
+  font-size: 17px;
+  color: gray;
+}
+.row i:hover {
+  color: white;
+}
+@media screen and (min-width: 240px) and (max-width: 767px) {
+  .box-tour-In {
+    width: 100%;
+    height: 350px;
+    background-position: -50px 0px;
+    background-size: 120% 100%;
+  }
+  .title {
+    width: 90%;
+    transform: translateY(200%);
+    padding-left: 10px;
+  }
+  .title h1 {
+    display: block;
+    padding-top: 30px;
+
+    font-size: 20px;
+  }
+  .search-content {
+    display: block;
+  }
+  .search-tour {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+  }
+  .search-content input:first-child {
+    width: 131.3%;
+    transform: translate(-13%, -55%);
+    background-color: #fff;
+    box-shadow: 0 0 5px gray;
+  }
+  .search-content input:nth-child(2),
+  .search-content input:nth-child(3),
+  .search-content select,
+  .search-content input:last-child {
+    display: none;
+  }
+  .tour-main {
+    width: 100%;
+    /* height: 12950px; */
+  }
+  .tour-main span {
+    display: block;
+    padding-left: 5px;
+  }
+  .tours {
+    display: block;
+    width: 94%;
+
+    margin: 7px auto;
+  }
+  .tours-img,
+  .tours-info,
+  .tours-time {
+    width: 100%;
+  }
+  .tours-img img {
+    height: 243px;
+  }
+  .tours-info {
+    padding: 0px;
+  }
+  .tours-time {
+    margin-top: 20px;
+  }
+  .tours-time span,
+  .tours-time a {
+    display: flex;
+  }
+  .tour-nav {
+    margin-top: 100px;
+  }
+  .seeMore {
+    width: 98%;
+    height: 330px;
+  }
+  .col {
+    clear: both;
+    width: 100%;
+    height: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .box-tour-In {
+    background-position: 0px -100px;
+  }
+  .title {
+    width: 93%;
+  }
+  .tour-main {
+    width: 98%;
+    /* height: 5350px; */
+  }
+  .search-content {
+    width: 93%;
+  }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            animation: infinite;
+        }
+        
+        @keyframes iden {
+            0%{
+                transform: scale(0.8);
+            }
+            25%{
+                transform: scale(1);
+            }
+            75%{
+                transform: scale(1.2);
+            }
+            100%{
+                transform: scale(0.8);
+            }
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+</body>
+<script>
+    var c = document.getElementById('canvas');
+    var context = c.getContext("2d")
+
+    c.width = window.innerWidth
+    c.height = window.innerHeight
+
+    function Particle(x,y,radius,color,velocity){
+        this.x = x;
+        this.y = y;
+        this.radius = radius
+        this.color = color;
+        this.velocity = velocity;
+        this.ttl = 200;
+        this.draw = () =>{
+            context.beginPath();
+
+            
+            
+            context.arc(this.x, this.y,this.radius, 0, Math.PI*2, false);
+            context.fillStyle = this.color;
+            context.fill();
+            context.closePath();
+            
+            
+        }
+        this.update = () =>{
+            this.draw(context);
+            
+            this.x += this.velocity.x 
+            this.y += this.velocity.y 
+            this.ttl--
+            
+            
+        }
+        
+    }
+    let arr;
+    let init = () =>{
+        arr = [];
+        for (let index = 0; index < 30; index++) {
+            const radian = (Math.PI*2) / 30;
+            arr.push(
+                new Particle( 
+                    (c.width) / 2,(c.height) / 2,10,"red",{x:Math.cos(radian * index),y:Math.sin(radian * index)}
+                )
+            );
+            
+        }
+    }
+    let updateCicrle = () =>{
+        
+       requestAnimationFrame(updateCicrle)
+       context.fillStyle = "rgba(0,0,0,0.05)";
+       context.fillRect(0,0,c.width,c.height);
+       
+       
+       arr.forEach((element,index )=> {
+        
+        element.update();
+        console.log(element)
+       });
+    }
+    init();
+    updateCicrle();
+    setInterval(init,2000)
+</script>
+</html>

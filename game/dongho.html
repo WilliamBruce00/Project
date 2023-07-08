@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mot{
+            display: inline-block;
+        }
+        #hai{
+            display: inline-block;
+        }
+        #mili{
+            display: inline-block;
+        }
+        #ml{
+            display: inline-block;
+        }
+    </style>
+    <script>
+        var i = 0 ; // i là giây hàng đồng 1 số
+        var s = 0;  // s là giây hàng chục 2 số
+        var n =0;   // n là phút hàng đồng 1 số
+        var p=0;    // p là phút hàng chục 2 số
+        function clickMouse(){
+            
+            
+        clear =    setInterval(function(){
+                i++;
+                document.getElementById('ml').innerHTML = i;
+                if(i==10){
+                    i=0;
+                    document.getElementById('ml').innerHTML = i;
+                    s++;
+                    document.getElementById('mili').innerHTML = s;
+               } 
+               if(s==6){
+                    
+                    s=0;
+                    
+                    document.getElementById('mili').innerHTML = s;
+                    n++;
+                    document.getElementById('hai').innerHTML = n;
+               } 
+               if(n==10){
+                    n=0;
+                    document.getElementById('hai').innerHTML = n;
+                    p++;
+                    document.getElementById('mot').innerHTML = p;
+               }  
+            },1000)
+        }
+        function resetMouse(){
+            location.reload();
+        }
+        function stopMouse(){
+            clearInterval(clear);
+            
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <div id="mot">0</div><div id="hai">0</div>:<div id="mili">0</div><div id="ml">0</div>
+        <br>
+        <button id="click"onclick="clickMouse()">Bấm</button>
+        
+        <button onclick="stopMouse()">Dừng</button>
+        <button id="stop"onclick="resetMouse()">Reset</button>
+    </center>
+</body>
+</html>

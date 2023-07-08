@@ -1,0 +1,74 @@
+#form{
+    margin-left: 550px;
+    background-color: rgb(35, 32, 32);
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+    text-align: center;
+    
+    
+    
+}
+h1{
+    padding-top: 40px;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+input{
+    width: 345px;
+    height: 45px;
+    background-color: black;
+    padding-left: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+}
+input:nth-child(3n){
+    
+    background-color: rgb(22, 81, 192);
+    width: 160px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 50px;
+    text-align: center;
+}
+input:nth-child(3n):hover{
+    background-color: wheat;
+    color: cadetblue;
+}
+input:nth-child(2n+1){
+    background-color: gray;
+    width: 160px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+input:nth-child(2n+1):hover{
+    background-color: wheat;
+    color: cadetblue;
+}
+input:focus{
+    
+    border-bottom: 2px solid gold ;
+    outline: none;
+    
+}    
+body{
+    background: url(../img/jk.jpg);
+    background-size: 100% ;
+    background-repeat: no-repeat;
+}
+.error{
+    color: white;
+    height: 20px;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 10px;
+    text-align: left;
+    padding-left: 15px;
+    color: red;
+}

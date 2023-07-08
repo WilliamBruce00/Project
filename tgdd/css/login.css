@@ -1,0 +1,89 @@
+.box-login {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
+}
+.box-login h2 {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: white;
+}
+#formLogin {
+  width: 30%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+.formLogin-row1 {
+  width: 100%;
+}
+.formLogin-row1 label {
+  color: gray;
+  pointer-events: none;
+  transition: all 0.25s ease-in-out;
+}
+.formLogin-row1 label:nth-child(1) {
+  position: absolute;
+  top: 270px;
+}
+.formLogin-row1 label:nth-child(6) {
+  position: absolute;
+  top: 340px;
+}
+
+.formLogin-row1 i {
+  color: white;
+  position: absolute;
+  right: 610px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+.formLogin-row1 input[type="text"],
+.formLogin-row1 input[type="password"] {
+  width: 100%;
+  height: 30px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid gray;
+  position: relative;
+  margin: 10px 0px;
+  color: #fff;
+}
+.formLogin-row2 {
+  margin-top: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 40% 50%;
+}
+.formLogin-row3 {
+  margin-top: 20px;
+}
+.formLogin-row3 input {
+  width: 200px;
+  height: 40px;
+  background-color: #e0ffff;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.formLogin-row2 span {
+  color: #fff;
+}
+.formLogin-row2 a {
+  text-align: right;
+  text-decoration: none;
+  color: #1e90ff;
+}
+.formLogin-row3 a {
+  text-decoration: none;
+  color: #1e90ff;
+}

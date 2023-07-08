@@ -1,0 +1,38 @@
+#demo, #demo2,#demo3,#demo4,#demo5,#demo6{
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.all{
+    width: 442px;
+    height: 70px;
+    font-variant: small-caps;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+.all:hover{
+    background-color: yellow;
+    
+}
+.form-controls{
+    width: 100px;
+    height: 40px;
+}
+.form-controls:focus{
+    background-color: yellow;
+    font-size: 20px;
+}
+h1{
+    color: yellow;
+}
+p{
+    color: yellow;
+}
+body{
+    background: url(../img/Hinh-nen-Full-HD-1080-cho-may-tinh-dep.jpg);
+}
+input{
+    font-size: 20px;
+}

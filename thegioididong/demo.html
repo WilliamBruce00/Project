@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .watch{
+            display: flex;
+        }
+        .hour,.minutes,.second{
+            margin-left: 5px;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 10px;
+        }
+        .n{
+            margin-left: 5px;
+            font-size: 30px;
+        }
+    </style>
+<body>
+    <div class="watch">
+        <div class="hour"></div><div class="n">:</div>
+        <div class="minutes"></div><div class="n">:</div>
+
+        <div class="second"></div>
+    </div>
+
+</body>
+<script>
+    var s = document.querySelector('.second');
+    var m = document.querySelector('.minutes');
+    var h = document.querySelector('.hour');
+    var time = new Date("May 02 2023 7:00:00");
+    var curDate = new Date()
+    
+    setInterval(() =>{
+        var now = new Date();
+        var diff = time - now;
+        var hour = Math.floor(diff / 1000 / 60 / 60) % 72;
+        var minutes = Math.floor(diff / 1000 / 60) % 60;
+        var second = Math.floor(diff / 1000) % 60;
+        h.innerHTML = hour < 10 ? '0' + hour : hour
+        m.innerHTML = minutes < 10 ? '0' + minutes : minutes
+        s.innerHTML = second < 10 ? '0' + second : second
+    },1000)
+    
+</script>
+</html>

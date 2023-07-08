@@ -1,0 +1,182 @@
+body{
+    background: url(../img/nj.jpg);
+    background-size: 100%;
+}
+.box{
+    width: 530px;
+    height: 720px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    background-color: rgb(202, 62, 62);
+}
+.box2{
+    width: 480px;
+    height: 280px;
+    border: 5px solid black;
+    margin-top: 20px;
+    float: left;
+    margin-left: 20px;
+}
+.box3{
+    margin-top: 5px;
+    margin-left: 38px;
+    width: 150px;
+    height: 30px;
+    float: left;
+    border: 1px solid white;
+    background-color: black;
+    
+    
+    
+    
+}
+#box4{
+    margin-top: 5px;
+    width: 150px;
+    height: 30px;
+    color: white;
+    float: left;
+    border: 1px solid white;
+    background-color: black;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+}
+.box5{
+    margin-top: 5px;
+    width: 150px;
+    height: 30px;
+    
+    float: left;
+    border: 1px solid white;
+    background-color: black;
+}
+footer{
+   
+    width: 480px;
+    height: 200px;
+    margin-left: 20px;
+}
+footer img{
+    margin-top: 50px;
+    width: 480px;
+    height: 230px;
+    margin-left: 6px;
+}
+#one,#two,#three{
+    width: 150px;
+    height: 270px;
+    border: 1px solid black;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 40px;
+    margin: 3px;
+    box-shadow:  0 0 60px inset red;
+    background-color: black;
+    color: gold;
+    font-size: 50px;
+}
+img{
+    width: 130px;
+    height: 130px;
+}
+button{
+    width: 480px;
+    height: 50px;
+    margin-right: 21px;
+    font-size: 20px;
+    font-variant: small-caps;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    box-shadow:  0 0 40px inset red;
+    background-color: black;
+    color: white;
+    margin-left: 20px;
+}
+h1{
+    margin: 0px;
+    background-color: red;
+    height: 70px;
+    line-height: 70px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom: 5px solid gray;
+    color: white;
+    letter-spacing: 10px;
+    animation: iden 0.4s infinite;
+}
+@keyframes iden {
+    0%{
+        color: white;
+    }
+    25%{
+        color: aqua;
+    }
+    75%{
+        color: green;
+    }
+    100%{
+        color: yellow;
+    }
+}
+/*--------------------------------------------------*/
+.box3 #name{
+    color: white;
+    font-size: 17px;
+    display: inline-block;
+    line-height: 30px;
+    font-weight: bold;
+    font-variant: small-caps;
+    margin-left: -40px;
+}
+.box3 #money{
+    color: white;
+    font-size: 17px;
+    display: inline-block;
+    line-height: 30px;
+    font-weight: bold;
+    font-variant: small-caps;
+    margin-left: 20px;
+}
+.box3 .dola{
+    display: inline-block;
+    color: white;
+}
+.box5 #name2{
+    color: white;
+    font-size: 17px;
+    display: inline-block;
+    line-height: 30px;
+    font-weight: bold;
+    font-variant: small-caps;
+    margin-left: -20px;
+}
+.box5 #bet{
+    color: white;
+    font-size: 17px;
+    display: inline-block;
+    line-height: 30px;
+    font-weight: bold;
+    font-variant: small-caps;
+    margin-left: 20px;
+}
+.box5 .dola{
+    display: inline-block;
+    color: white;
+}
+#bet2,#bet3{
+    display: inline-block;
+    color: white;
+}
+#wheel:disabled{
+    background-color: gray;
+}

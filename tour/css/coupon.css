@@ -1,0 +1,77 @@
+:root {
+  --font: "Montserrat", "Open Sans", sans-serif;
+}
+.coupon-main {
+  width: 100%;
+  height: 1650px;
+}
+.coupon-banner {
+  width: 100%;
+  height: 300px;
+  background: url(../img/Tour-tag-STA-01.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0px -180px;
+}
+.coupon-banner h2 {
+  margin: 0;
+  font-family: var(--font);
+  text-align: center;
+  color: #ffff;
+  padding-top: 170px;
+}
+.coupon-content {
+  width: 70%;
+  height: 1400px;
+
+  margin: 0 auto;
+}
+.coupon-content p {
+  font-family: var(--font);
+  font-size: 13px;
+  line-height: 20px;
+  padding-top: 20px;
+}
+.coupon-content img {
+  width: 90%;
+  height: 592px;
+  transform: translateX(6%);
+}
+
+@media screen and (min-width: 240px) and (max-width: 767px) {
+  .coupon-main {
+    width: 100%;
+    height: 100%;
+  }
+  .coupon-banner {
+    width: 100%;
+    height: 350px;
+    background-size: 250% 100%;
+    background-position: -280px 0px;
+  }
+  .coupon-content {
+    width: 95%;
+    height: 100%;
+    margin-bottom: 80px;
+  }
+  .coupon-content img {
+    width: 307px;
+    height: 172px;
+    transform: translateX(10%);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .coupon-main {
+    width: 100%;
+    height: 100%;
+  }
+  .coupon-banner {
+    width: 100%;
+    height: 300px;
+    background-size: 100% 100%;
+    background-position: 0px;
+  }
+  .coupon-content {
+    width: 96%;
+  }
+}

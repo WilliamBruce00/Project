@@ -1,0 +1,131 @@
+body{
+    background: url(../img/ene4.jpg);
+    background-size: 100%;
+}
+.prod{
+    width: 200px;
+    height: 100px;
+    border: 2px solid brown;
+    border-radius: 100%;
+    margin-top: 90px;
+    margin-left: 20px;
+    position: relative;
+    float: left;
+}
+img{
+    position: absolute;
+    bottom: 10px;
+    right: 40px;
+    width: 120px;
+}
+.all{
+    width: 700px;
+    height: 600px;
+    background-color: orangered;
+    text-align: center;
+    margin: 0 auto;
+}
+#mouse1,#mouse2,#mouse3,#mouse4,#mouse5,#mouse6,#mouse7,#mouse8,#mouse9{
+    display: none;
+}
+img:active{
+    transform: rotate(30deg);
+    
+   
+}
+h1{
+    color: white;
+}
+.box{
+    border: 5px solid yellow;
+    position: absolute;
+    top:10px;
+    left: 80px;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: wheat;
+    text-align: center;
+}
+.diem{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    font-variant: small-caps;
+    text-shadow: 0 0 20px yellow;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#point{
+    font-size: 50px;
+    text-align: center;
+    color: orangered;
+    text-shadow: 0 0 20px orangered;
+    font-weight: bold;
+}
+/*-----------------------------------------------------------------*/
+#mot{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+}
+#hai{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+}
+#ba{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+}
+#bon{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+}
+.box1{
+    text-align: center;
+}
+.watch{
+    width: 120px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 120px;
+    position: fixed;
+    top:10px;
+    background-color: orangered;
+}
+button{
+    position: absolute;
+    right: 630px;
+    font-size: 25px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    bottom: 10px;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+button:hover{
+    background-color: orangered;
+    color: white;
+}
+#row{
+    position: absolute;
+    top:0px;
+    border-radius: 30px;
+    left: 0px;
+}
+.bb{
+    border: 2px solid black;
+    width: 357px;
+    height: 20px;
+    position: absolute;
+    left: -120px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+
+

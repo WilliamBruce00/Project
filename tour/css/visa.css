@@ -1,0 +1,77 @@
+:root {
+  --font: "Montserrat", "Open Sans", sans-serif;
+}
+.visa-main {
+  width: 100%;
+  height: 1700px;
+}
+.visa-banner {
+  width: 100%;
+  height: 300px;
+  background: url(../img/VisaNhat_795560653.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0px -360px;
+}
+.visa-banner h2 {
+  margin: 0;
+  font-family: var(--font);
+  text-align: center;
+  color: #ffff;
+  padding-top: 170px;
+}
+.visa-content {
+  width: 70%;
+  height: 1300px;
+
+  margin: 0 auto;
+  font-family: var(--font);
+}
+.visa-content p {
+  margin: 4px;
+  font-size: 13px;
+}
+.visa-content img {
+  width: 900px;
+  height: 702px;
+}
+
+@media screen and (min-width: 240px) and (max-width: 767px) {
+  .visa-main {
+    width: 100%;
+    height: 100%;
+  }
+  .visa-banner {
+    width: 100%;
+    height: 350px;
+    background-size: 250% 120%;
+    background-position: -250px 0px;
+    background-color: red;
+  }
+  .visa-content {
+    width: 95%;
+  }
+  .visa-content img {
+    width: 324px;
+    height: 216px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .visa-main {
+    width: 100%;
+    height: 100%;
+  }
+  .visa-banner {
+    width: 100%;
+    height: 300px;
+    background-position: 0px;
+    background-size: 100% 200%;
+  }
+  .visa-content {
+    width: 97%;
+  }
+  .visa-content img {
+    width: 706px;
+    height: 471px;
+  }
+}

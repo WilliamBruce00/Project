@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 80%;
+        
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 440px;
+        column-gap: 20px;
+        margin: 0 auto;
+      }
+      .prod {
+        background-color: #fff;
+        box-shadow: 0 0 5px gray;
+        border-radius: 10px;
+      }
+      .prod-top {
+        width: 100%;
+        height: 197px;
+        
+      }
+      .prod-bottom {
+        width: 100%;
+        
+        height: calc(440px - 197px);
+        padding: 0px 20px;
+        padding-top: 10px;
+      }
+      .prod-bottom .fa-location-dot {
+        color: gray;
+      }
+      .prod-bottom p:nth-child(1) {
+        color: black;
+        font-weight: bold;
+        font-size: 14px;
+      }
+      .prod-bottom p:nth-child(2) {
+        color: red;
+        font-size: 17px;
+      }
+      .fa-star {
+        color: gold;
+      }
+      .prod-bottom span:nth-child(6) {
+        color: gray;
+        margin-left: 10px;
+        font-weight: bold;
+      }
+      .end{
+        width: 100%;
+        
+      }
+      .end-left{
+        width: 50%;
+        height: 50px;
+        
+        display: flex;float: left;
+      }
+      .end-right{
+        width: 50%;
+        height: 50px;
+        
+        display: flex;float: left;
+      }
+      .end-left-left{
+        width: 10%;
+        height: 100%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .end-left-right{
+        width:80%;
+        height: 100%;
+        
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+      }
+      .end-right-left{
+        width: 10%;
+        height: 100%;
+        
+        display: grid;
+        
+        justify-content: center;
+        align-items: center;
+      }
+      .end-right-right{
+        width: 90%;
+        color: red;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        font-size: 20px;
+      }
+      .end-right-left i{
+        color: gold;
+      }
+      .prod-top img{
+        width: 100%;
+        height: 100%;
+      }
+      .prod-bottom p{
+        margin-bottom: 25px;
+      }
+      @media screen and (min-width:240px) and (max-width:768px) {
+        .container{
+            width: 90%;
+            grid-template-columns: auto;
+            row-gap: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="prod">
+        <div class="prod-top">
+            <img src="https://ngocanhtravel.vn/wp-content/uploads/2014/12/banner-tour-du-lich-hai-duong-bai-dinh-trang-an-1-ngay-1-680x500.jpg">
+        </div>
+        <div class="prod-bottom">
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Hải Dương - Bái Đính - Tràng An - Hải Dương </span>
+          </p>
+          <p>Tour Du Lich Hai Duong - Bai Dinh - Trang An 1 ngay</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>1 Danh gia</span>
+          </p>
+          <p>
+            <div class="end">
+              <div class="end-left">
+                <div class="end-left-left">
+                  <i class="fa-regular fa-clock"></i>
+                  
+                </div>
+                <div class="end-left-right">
+                    <span>Tour Trong Ngay</span>
+                </div>
+              </div>
+            </div>
+            <div class="end-right">
+                <div class="end-right-left">
+                    <i class="fa-solid fa-bolt"></i>
+
+                    <span>tu</span>
+                </div>
+                <div class="end-right-right">
+                    <span>690,000VND</span>
+                </div>
+            </div>
+          </p>
+        </div>
+      </div>
+      <div class="prod">
+        <div class="prod-top">
+            <img src="https://ngocanhtravel.vn/wp-content/uploads/2014/12/banner-tour-du-lich-hai-duong-bai-dinh-trang-an-1-ngay-1-680x500.jpg">
+        </div>
+        <div class="prod-bottom">
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Hải Dương - Bái Đính - Tràng An - Hải Dương </span>
+          </p>
+          <p>Tour Du Lich Hai Duong - Bai Dinh - Trang An 1 ngay</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>1 Danh gia</span>
+          </p>
+          <p>
+            <div class="end">
+              <div class="end-left">
+                <div class="end-left-left">
+                  <i class="fa-regular fa-clock"></i>
+                  
+                </div>
+                <div class="end-left-right">
+                    <span>Tour Trong Ngay</span>
+                </div>
+              </div>
+            </div>
+            <div class="end-right">
+                <div class="end-right-left">
+                    <i class="fa-solid fa-bolt"></i>
+
+                    <span>tu</span>
+                </div>
+                <div class="end-right-right">
+                    <span>690,000VND</span>
+                </div>
+            </div>
+          </p>
+        </div>
+      </div>
+      <div class="prod">
+        <div class="prod-top">
+            <img src="https://ngocanhtravel.vn/wp-content/uploads/2014/12/banner-tour-du-lich-hai-duong-bai-dinh-trang-an-1-ngay-1-680x500.jpg">
+        </div>
+        <div class="prod-bottom">
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Hải Dương - Bái Đính - Tràng An - Hải Dương </span>
+          </p>
+          <p>Tour Du Lich Hai Duong - Bai Dinh - Trang An 1 ngay</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>1 Danh gia</span>
+          </p>
+          <p>
+            <div class="end">
+              <div class="end-left">
+                <div class="end-left-left">
+                  <i class="fa-regular fa-clock"></i>
+                  
+                </div>
+                <div class="end-left-right">
+                    <span>Tour Trong Ngay</span>
+                </div>
+              </div>
+            </div>
+            <div class="end-right">
+                <div class="end-right-left">
+                    <i class="fa-solid fa-bolt"></i>
+
+                    <span>tu</span>
+                </div>
+                <div class="end-right-right">
+                    <span>690,000VND</span>
+                </div>
+            </div>
+          </p>
+        </div>
+      </div>
+      <div class="prod">
+        <div class="prod-top">
+            <img src="https://ngocanhtravel.vn/wp-content/uploads/2014/12/banner-tour-du-lich-hai-duong-bai-dinh-trang-an-1-ngay-1-680x500.jpg">
+        </div>
+        <div class="prod-bottom">
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Hải Dương - Bái Đính - Tràng An - Hải Dương </span>
+          </p>
+          <p>Tour Du Lich Hai Duong - Bai Dinh - Trang An 1 ngay</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>1 Danh gia</span>
+          </p>
+          <p>
+            <div class="end">
+              <div class="end-left">
+                <div class="end-left-left">
+                  <i class="fa-regular fa-clock"></i>
+                  
+                </div>
+                <div class="end-left-right">
+                    <span>Tour Trong Ngay</span>
+                </div>
+              </div>
+            </div>
+            <div class="end-right">
+                <div class="end-right-left">
+                    <i class="fa-solid fa-bolt"></i>
+
+                    <span>tu</span>
+                </div>
+                <div class="end-right-right">
+                    <span>690,000VND</span>
+                </div>
+            </div>
+          </p>
+        </div>
+      </div>
+      
+      
+    </div>
+  </body>
+</html>

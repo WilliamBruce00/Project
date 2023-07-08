@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var root = [4, 2, 7, 1, 3, 6, 9];
+    var target = 1;
+    var arr1 = new Array();
+    var arr2 = new Array();
+    var arr3 = new Array();
+    var f = [];
+    f.push(target);
+    for (var n = 1; n < 3; n++) {
+      target = target * 2;
+      f.push(target);
+    }
+
+    for (var i = 0; i < root.length; i++) {
+      arr1.push(root[i]);
+      arr2.push(root[i + 1]);
+      arr3.push(root[i + 3]);
+      if (arr1.length == f[0]) {
+        var arr1N = arr1.slice(0, arr1.length).reverse();
+      }
+      if (arr2.length == f[1]) {
+        var arr2N = arr2.slice(0, arr2.length).reverse();
+      }
+      if (arr3.length == f[2]) {
+        var arr3N = arr3.slice(0, arr3.length).reverse();
+      }
+    }
+    console.log(arr1N.concat(arr2N).concat(arr3N));
+  </script>
+</html>

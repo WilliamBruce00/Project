@@ -1,0 +1,151 @@
+.box{
+    width: 700px;
+    height: 720px;
+    border: 1px solid black;
+    margin: auto;
+    position: relative;
+    background: url(../img/sky.jpg);
+    background-size: 100% 100%;
+}
+#figure{
+    width: 150px;
+    height: 70px;
+    position: absolute;
+    bottom: 0px;
+    left: 300px;
+    
+   
+    
+}
+img{
+    width: 150px;
+    height: 70px;
+}
+#fruit_One{
+    width: 50px;
+    height: 50px;
+    display: none;
+    left: 50px;
+    position: absolute;
+    top:0px
+}    
+    
+
+#fruit_Two{
+    width: 50px;
+    height: 50px;
+    display: none;
+    left: 200px;
+    position: absolute;
+    top:0px
+}   
+#fruit_Three{
+    width: 50px;
+    height: 50px;
+    display: none;
+    left: 300px;
+    position: absolute;
+    top:0px
+}   
+#fruit_Four{
+    width: 50px;
+    height: 50px;
+    display: none;
+    left: 450px;
+    position: absolute;
+    top:0px
+}   
+#fruit_Five{
+    width: 50px;
+    height: 50px;
+    display: none;
+    left: 600px;
+    position: absolute;
+    top:0px
+}   
+    
+
+#fruit_One img{
+    width: 50px;
+    height: 50px;
+}
+#fruit_Two img{
+    width: 50px;
+    height: 50px;
+}
+#fruit_Three img{
+    width: 50px;
+    height: 50px;
+}
+#fruit_Four img{
+    width: 50px;
+    height: 50px;
+}
+#fruit_Five img{
+    width: 50px;
+    height: 50px;
+}
+.box_top_right{
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    background-color: white;
+    top:10px;
+    right:385px;
+    text-align: center;
+    
+}
+.box_top_right> .header{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.box_top_right > #point{
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+}
+button{
+    margin-left: 650px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border-radius: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 20px inset black;
+}
+.watch{
+    position: absolute;
+    top:10px;
+    right: 490px;
+    width: 130px;
+    height: 60px;
+    background-color: white;
+    text-align: center;
+}
+#one,#two,#three,#four{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.Time{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+button:disabled{
+    background-color: white;
+}
+body{
+    background: url(../img/g6.jpg);
+    background-size:  100% 100%;
+}

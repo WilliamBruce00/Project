@@ -1,0 +1,90 @@
+.box-details {
+  width: 80%;
+  /* height: 500px; */
+  margin: 0 auto;
+}
+.box-details-wrap {
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+.wrap-left {
+  width: 70%;
+  height: 100%;
+  display: flex;
+}
+.wrap-left-left {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap-left-left img {
+  width: 120%;
+  height: 80%;
+}
+.wrap-left-right {
+  width: 65%;
+  height: 100%;
+  padding-top: 50px;
+  padding-left: 40px;
+}
+.wrap-left-right p {
+  margin: 20px 0px;
+}
+.book {
+  width: 80%;
+  height: 65%;
+  background-color: white;
+  border: 5px solid gainsboro;
+  border-radius: 5px;
+  padding: 10px;
+}
+.wrap-right {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.book table {
+  border-collapse: collapse;
+  outline: none;
+  border: none;
+}
+.book table th {
+  width: 40px;
+  height: 40px;
+  font-size: 17px;
+  background-color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+  border: 1px solid gray;
+}
+.btn-2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.btn-2 button {
+  height: 40px;
+  outline: none;
+  border: none;
+}
+.btn-2 button:nth-child(1) {
+  width: 60%;
+  background-color: whitesmoke;
+  border: 2px solid green;
+  color: gray;
+}
+.btn-2 button:nth-child(2) {
+  width: 40%;
+  background-color: green;
+  color: #fff;
+  padding: 0 5px;
+}
+.btn-2 button:hover {
+  opacity: 0.7;
+}

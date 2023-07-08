@@ -1,0 +1,176 @@
+body{
+    background: url(../img/e5.jpg);
+    background-size: 100%;
+}
+#spin{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 10px solid wheat;
+    box-shadow: 0 0 20px inset gray;
+    transition: transform 5s ease-in-out;
+    margin: 0 auto;
+} 
+
+.number1{
+    height: 50%;
+    width: 50%;
+    background-color: green;
+    border-top-left-radius: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 0 20px inset black;
+}
+.number2{
+    height: 50%;
+    width: 50%;
+    background-color: gray ;
+    border-top-right-radius: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 0 20px inset black;
+}
+.number3{
+    height: 50%;
+    width: 50%;
+    background-color: gray ;
+    border-bottom-left-radius: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 0 20px inset black;
+}
+.number4{
+    height: 50%;
+    width: 50%;
+    background-color: green;
+    border-bottom-right-radius: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 0 20px inset black;
+}
+#we{
+    position: absolute;
+    right: 48%;
+    top:310px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+#we:hover{
+    background-color: black;
+    color: white;
+}
+#mui{
+    width: 40px;
+    height: 50px;
+    clip-path: polygon(100% 0 , 50% 100% , 0 0 );
+    background-color: black;
+    transform: rotate(180deg);
+    position: absolute;
+    top:270px;
+    right: 720px;
+}
+#result{
+    position: absolute;
+    top:10px;
+    right: 640px;
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    box-shadow:  0 0 5px gray;
+    border-radius: 30px;
+    display: none;
+}
+#TB{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#result button{
+    margin-left: 65px;
+    
+    width: 70px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow:  0 0 20px inset black;
+    font-weight: bold;
+}
+#result button:hover{
+    background-color: black;
+    color: white;
+}
+#title{
+    font-size: 20px;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: center;
+}
+#name{
+    transform: rotate(320deg);
+    margin-left: 20px;
+    margin-bottom: 80px;
+}
+#name2{
+    transform: rotate(410deg);
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+#name3{
+    transform: rotate(320deg);
+    margin-top: 30px;
+    margin-left: 10px;
+}
+#name4{
+    transform: rotate(410deg);
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+h1{
+    animation: iden 0.5s infinite;
+    
+}
+#we:disabled{
+    background-color: white;
+}
+@keyframes iden {
+    0%{
+        color: red;
+        
+    }
+    25%{
+        color: blue;
+        
+    }
+    75%{
+        color: yellow;
+        
+    }
+    100%{
+        color: green;
+        
+    }
+}

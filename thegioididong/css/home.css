@@ -1,0 +1,342 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+    height: 450px;
+}
+.header-slides{
+    top:350px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute; 
+    width: 80%;
+    height: 190px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+.slides-content{
+    width: 400%;
+    
+    position: relative;
+    left: 0;
+    transition: 0.5s linear all;
+}
+.slides{
+    
+    width: 100%;
+    
+}
+.slides img{
+    width: 12.5%;
+    height: 100%;
+    border-radius: 20px;
+    float: left;
+} 
+.control{
+    font-size: 20px;
+    width: 84%;
+    margin:  -30px auto;
+   
+    display: flex;
+    justify-content: space-between;
+}
+.control i{
+    background-color: white;
+    opacity: 0.6;
+    padding: 15px 20px;
+    border-radius: 50%;
+} 
+/* --------------------------------HEADER-PRODUCT---------------------------- */
+.header-main{
+    
+    width: 80%;
+    height: 1500px;
+    background-color: #ffd400;
+    margin: 115px auto;
+}
+.header-product{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}    
+.product-box-1,.product-box-2,.product-box-3,.product-box-4{
+    width: 23.5%;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+.header-product img{
+    width:80px;
+    height: 80px;
+}    
+/* -------------------------HEADER-APPTIC ----------------------------*/
+.header-apptic{
+    background: url(../img/1200x100-1200x100.webp);
+    width: 100%;
+    height: 100px;
+    margin: 30px auto;
+    background-color: aqua;
+    background-size: 100%;
+    border-radius: 20px;
+}
+/* -----------------------HEADER-SALE------------------------------------- */
+.header-sale{
+    width: 100%;
+    height: 960px;
+    background-color: #ff685f;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.logo-sale{
+    display: flex;
+}
+.logo{
+    width: 60px;
+    height: 80px;
+}
+.logo img{
+    margin-top: 10px;
+    width: 70px;
+    height: 90px;
+}
+.header-header{
+    width: 280px;
+    height: 80px;
+    
+    display: grid;
+    grid-template-areas: 
+    "aa aa"
+    "bb cc";
+}
+
+.header-header h2{
+    margin: 0px;
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(213, 185, 27);
+    grid-area: aa;
+}
+.header-header p{
+    padding-top: 5px;
+    margin: 0px;
+    color: white;
+    grid-area: bb;
+}
+.header-header .watch{
+    grid-area: cc;
+    
+    
+   
+}
+.header-header .watch span{
+    line-height: 35px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.header-header .watch p{
+    display: inline-block;
+    font-weight: bold;
+}
+.header-time{
+    margin-top: 20px;
+    margin-left: 350px;
+    color: white;
+    text-align: center;
+}
+.header-time div:first-child{
+    font-size: 18px;
+}
+.header-time div:last-child{
+    
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 5px solid white;
+    
+}
+.product-sale{
+    margin-top: 20px;
+    width: 100%;
+    height: 850px;
+    
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+}
+.product-sale .prod{
+    margin: 5px;
+    width: 180px;
+    height: 400px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+.prod img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 170px;
+    height: 190px;
+}
+.prod .price{
+    margin-top: 10px;
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+}
+.prod .price-sale{
+    margin-top: -10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.prod .price-sale del{
+    font-size: 17px;
+    color: gray;
+    font-weight: 100;
+}
+.prod .price-sale span{
+    margin-left: -5px;
+    color: red;
+    background-color: rgba(255, 0, 0, 0.1);
+    width: 30px;
+    height: 20px;
+    border-radius: 5px;
+    padding: 5px 2px;
+}
+.prod .slot{
+    width: 170px;
+    height: 20px;
+    text-align: center;
+    background-color: gold;
+    border-radius: 20px;
+}
+.product-deal{
+    margin-top: 60px;
+    width: 100%;
+    margin: 0 auto;
+    height: 650px;
+    background-color: orange;
+    display: grid;
+    
+    
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.deal-1{
+    
+    width: 100%;
+    height: 120px;
+    background: url(../img/Tagline-TOP-DEAL-SOC-1200x120-4.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+   
+}
+.deals{
+    width: 100%;
+    height: 440px;
+    
+    display: grid;
+    grid-template-columns: repeat(5, 19%);
+    gap: 5px;
+    justify-content: space-evenly;
+}
+.deals .prod-2{
+    border-radius: 5px;
+    height: 440px;
+    background-color: white;
+    text-align: center;
+    
+}
+.prod-2 img{
+    margin-top: 5px;
+    width: 200px;
+    height: 200px;
+    transition: all 0.5s linear;
+}
+.prod-2 img:hover{
+    transform: translateY(-6%);
+    
+}
+.prod-2 .install{
+    text-align: left;
+    font-size: 13px;
+    background-color: rgba(128, 128, 128, 0.1);
+    width: 70px;
+    padding: 2px;
+    margin: 10px;
+}
+.prod-2 .bannerr{
+    text-align: left;
+    margin: 10px;
+    background: linear-gradient(to right,gold,orange,red);
+    width: 130px;
+    font-size: 13px;
+    padding: 2px 10px;
+    border-radius: 50px;
+    color: white;
+}
+.bannerr i{
+    padding: 2px;
+    box-shadow: 0 0 0 2px white, 0 0 0 4px red;
+    border-radius: 50%;
+}    
+.prod-2 .names{
+    margin: 10px;
+    text-align: left;
+}
+.names a{
+    color: black;
+    text-decoration: none;
+}
+.names a:hover{
+    color: blue;
+}
+.prod-2 .prices{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+.prices p{
+    display: inline-block;
+    margin-left: 10px;
+    padding: 2px;
+    margin-top: 0px;
+    background-color: rgba(255, 0, 0, 0.1);
+    font-size: 15px;
+}
+.deal-7{
+    width: 350px;
+    height: 50px;
+    margin: 0 auto;
+}
+.deal-7 button{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.deal-7 i{
+    margin-left: 10px;
+}
+

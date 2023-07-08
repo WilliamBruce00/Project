@@ -1,0 +1,13 @@
+body{
+    background: url(../img/e7.jpg);
+    background-size: 100%;
+}
+button{
+    width: 200px;
+    height: 200px;
+    font-size: 40px;
+    background-color:white;
+}
+h1{
+    color: white;
+}

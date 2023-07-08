@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .container{
+            width: 380px;
+            height: 680px;
+            font-size: 19px;
+            transform: rotateX(180deg);
+            overflow: scroll;
+            margin: 0 auto;
+            background-color: 	#DCDCDC;
+            
+        }
+        .chat{
+           transform: rotateX(180deg);
+        }            
+        p{
+            margin: 10px;
+            
+        }        
+        article{
+            width: 210px;
+            background-color: LightCyan;
+            margin-left: 130px;
+            margin-bottom: 10px;
+            padding: 10px 10px;
+            border-radius: 10px;
+            
+        }
+        aside{
+            width: 210px;
+            background-color: white;
+            margin-left: 5px;
+            padding: 10px 10px;
+            border: 1px solid aqua;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        header{
+            position: absolute;
+            top: 6px;
+            right: 570px;
+        }
+        button:first-child{
+            background-color: white;
+            outline: none;
+            border: none;
+            color: black;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        button:last-child{
+            background-color: black;
+            outline: none;
+            border: none;
+            color: white;
+            border-radius: 10px;
+        }
+        button:first-child:hover{
+            background-color: blue;
+            color: white;
+        }
+        button:last-child:hover{
+            background-color: blue;
+            color: black;
+        }
+        input:first-child{
+            width: 330px;
+            height: 30px;
+            padding-left: 10px;
+            font-size: 19px;
+        }
+        input:last-child{
+            height: 34px;
+            
+        }    
+        article p{
+            font-size: 15px;
+            text-align: left;
+            margin: 0px;
+            color: #57534e
+        }   
+        aside p{
+            font-size: 15px;
+            text-align: left;
+            margin: 0px;
+            color: #57534e
+        }
+        
+    </style>
+</head>
+<body>
+    
+        <main class="container">
+            <div class="chat">
+               <!-- article -->
+               <!-- aside -->
+            </div>
+            
+        </main>
+        <center>
+            <input type="text" placeholder="Enter message">
+            <input type="button" value="OK" onclick="submitE()">
+        </center>
+        <header>
+            <button onclick="tranLight()">light</button>
+            <button onclick="tranDark()">dark</button>
+        </header>
+
+</body>
+<script>
+    
+    var chat = document.querySelector('.chat')
+    var text = document.querySelectorAll('input');
+    var tagP = document.querySelectorAll('p')
+    var load = "bot đang soạn tin....";
+    text[1].disabled = false
+    
+    function submitE(){
+        text[0].value.toLowerCase();
+        var time = new Date();
+        var h = time.getHours();
+        var m = time.getMinutes();
+        if(text[0].value == ""){
+            text[1].disabled = false;
+        }
+        else{
+            var user = document.createElement('article');
+            var content = document.createTextNode(text[0].value);
+            var timeM = document.createTextNode(h + ":" + m );
+            var p = document.createElement('p')
+            p.appendChild(timeM)
+            user.appendChild(content)                
+            user.appendChild(p)
+            chat.appendChild(user)
+            
+            
+            if(user.childNodes[0].length == 3 || user.childNodes[0].length == 4 || user.childNodes[0].length == 2 || user.childNodes[0].length == 1){
+                user.style.marginLeft = "280px"
+                user.style.width = "50px"
+            }
+            else if(user.childNodes[0].length == 5){
+                user.style.width = "60px"
+                user.style.marginLeft = "280px"
+            }
+            else if(user.childNodes[0].length == 6){
+                user.style.width = "60px"
+                user.style.marginLeft = "270px"
+            }
+            else if(user.childNodes[0].length == 7){
+                user.style.width = "70px"
+                user.style.marginLeft = "260px"
+            }
+            else if(user.childNodes[0].length == 8){
+                user.style.width = "80px"
+                user.style.marginLeft = "250px"
+            }
+            else if(user.childNodes[0].length == 9){
+                user.style.width = "90px"
+                user.style.marginLeft = "240px"
+            }
+            else if(user.childNodes[0].length == 10){
+                user.style.width = "100px"
+                user.style.marginLeft = "230px"
+            }
+            else if(user.childNodes[0].length == 11){
+                user.style.width = "110px"
+                user.style.marginLeft = "220px"
+            }
+            else if(user.childNodes[0].length == 12 || user.childNodes[0].length == 13){
+                user.style.width = "130px"
+                user.style.marginLeft = "200px"
+            }
+            else if(user.childNodes[0].length == 14 || user.childNodes[0].length == 15){
+                user.style.width = "140px"
+                user.style.marginLeft = "190px"
+            }
+            else if(user.childNodes[0].length == 16 || user.childNodes[0].length == 17 || user.childNodes[0].length == 18){
+                user.style.width = "170px"
+                user.style.marginLeft = "160px"
+            }
+            else if(user.childNodes[0].length == 19){
+                user.style.width = "180px"
+                user.style.marginLeft = "150px"
+            }
+            else if(user.childNodes[0].length <= 23 && user.childNodes[0].length >= 20){
+                user.style.width = "210px"
+                user.style.marginLeft = "130px"
+            }
+            
+            
+            if(text[0].value.toLowerCase().match('hello')){    
+                var bot = document.createElement('aside')
+                var content = document.createTextNode(load)
+                bot.appendChild(content)                
+                chat.appendChild(bot)
+                bot.style.color = "blue"
+                bot.style.fontStyle = "italic"
+                bot.style.fontSize = "15px"
+                setTimeout(function(){
+                    bot.innerHTML = "Hi, you!"
+                    var p = document.createElement('p')
+                    var timeM = document.createTextNode(h+":"+m)
+                    p.appendChild(timeM)
+                    bot.appendChild(p)
+                    bot.style.color = "black"
+                    bot.style.fontStyle = "normal"
+                    bot.style.fontSize = "19px"  
+                },2000)
+                text[0].value = null;  
+            }    
+            else if(text[0].value.toLowerCase().match('what is your name')){
+                var bot = document.createElement('aside')
+                var content = document.createTextNode(load)
+                bot.appendChild(content)                
+                chat.appendChild(bot)
+                bot.style.color = "blue"
+                bot.style.fontStyle = "italic"
+                bot.style.fontSize = "15px"
+                setTimeout(function(){
+                    bot.innerHTML = "My name is Chatbot."
+                    var p = document.createElement('p')
+                    var timeM = document.createTextNode(h+":"+m)
+                    p.appendChild(timeM)
+                    bot.appendChild(p)
+                    bot.style.color = "black"
+                    bot.style.fontStyle = "normal"
+                    bot.style.fontSize = "19px";
+                },2000)
+                text[0].value = null;    
+            }     
+            else if(text[0].value.toLowerCase().match('how old are you')){
+                var bot = document.createElement('aside')
+                var content = document.createTextNode(load)
+                bot.appendChild(content)                
+                chat.appendChild(bot)
+                bot.style.color = "blue"
+                bot.style.fontStyle = "italic"
+                bot.style.fontSize = "15px"
+                setTimeout(function(){
+                    bot.innerHTML = "I'm a robot, I have no age."
+
+                    var p = document.createElement('p')
+                    var timeM = document.createTextNode(h+":"+m)
+                    p.appendChild(timeM)
+                    bot.appendChild(p)
+                    bot.style.color = "black"
+                    bot.style.fontStyle = "normal"
+                    bot.style.fontSize = "19px";
+                },2000)
+                text[0].value = null;    
+            }     
+            else if(text[0].value.toLowerCase().match('do you have any brothers or sisters')){
+                var bot = document.createElement('aside')
+                var content = document.createTextNode(load)
+                bot.appendChild(content)                
+                chat.appendChild(bot)
+                bot.style.color = "blue"
+                bot.style.fontStyle = "italic"
+                bot.style.fontSize = "15px"
+                setTimeout(function(){
+                    bot.innerHTML = "I do not have sister or brother."
+
+                    var p = document.createElement('p')
+                    var timeM = document.createTextNode(h+":"+m)
+                    p.appendChild(timeM)
+                    bot.appendChild(p)
+                    bot.style.color = "black"
+                    bot.style.fontStyle = "normal"
+                    bot.style.fontSize = "19px";
+                },2000)
+                text[0].value = null;    
+            }     
+            else if(text[0].value.toLowerCase().match('help me')){
+                var bot = document.createElement('aside')
+                var content = document.createTextNode(load)
+                bot.appendChild(content)                
+                chat.appendChild(bot)
+                bot.style.color = "blue"
+                bot.style.fontStyle = "italic"
+                bot.style.fontSize = "15px"
+                setTimeout(function(){
+                    bot.innerHTML = "Okay, If I can."
+
+                    var p = document.createElement('p')
+                    var timeM = document.createTextNode(h+":"+m)
+                    p.appendChild(timeM)
+                    bot.appendChild(p)
+                    bot.style.color = "black"
+                    bot.style.fontStyle = "normal"
+                    bot.style.fontSize = "19px";
+                text[0].value = null;   
+                },2000) 
+            }     
+                   
+        }            
+                      
+    
+
+                
+                
+                
+            
+            
+              
+                
+             
+            
+               
+                
+               
+            
+        
+        
+    }        
+    document.onkeyup = (e) =>{
+        if(e.key == "Enter"){
+            submitE();
+        }
+        
+    } 
+    function tranDark(){
+        document.querySelector('.container').style.backgroundColor = "black"
+    }    
+        
+    function tranLight(){
+        document.querySelector('.container').style.backgroundColor = "#DCDCDC"
+    }    
+     
+        
+
+      
+    
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+       
+    
+    
+    

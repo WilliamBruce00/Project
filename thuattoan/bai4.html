@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var price = [7, 6, 4, 3, 1];
+    var newPrice = [];
+
+    for (var i = 1; i < price.length; i++) {
+      for (var j = 2; j < price.length; j++) {
+        var priceSell = price[j] - price[i];
+
+        newPrice.push(priceSell);
+        var arr = new Set(newPrice.sort());
+        console.log(newPrice);
+      }
+    }
+    console.log([...arr][[...arr].length - 1]);
+  </script>
+</html>

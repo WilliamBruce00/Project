@@ -1,0 +1,215 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+.container{
+    width: 100%;
+    float: left;
+    background-color: #ffd400;
+    
+}    
+.container .header-slide{
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+}
+.container .header-slide .images{
+    width: 100%;
+    height: 50px;
+}
+.container .header-slide .images img{
+    width: 100%;
+    height: 50px;
+}
+.controls  i:nth-child(2n+1){
+    position: absolute;
+    top:0px;
+    left: 150px;
+    font-size: 50px;
+    color: gray;
+}   
+.controls  i:nth-child(2n+1):hover{
+    color: whitesmoke; 
+}   
+.controls  i:nth-child(2n){
+    position: absolute;
+    top: 0px;
+    right:150px;
+    font-size: 50px;
+    color: gray;
+}
+.controls  i:nth-child(2n):hover{
+    color: whitesmoke;
+} 
+
+/* ----------------------------HEADER-TOP---------------------------------- */
+.header-top{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    background-color: #ffd400;
+}    
+.header-top .box-content{
+    width: 80%;
+    height: 40px;
+    background-color:#ffd400;
+    margin: 0 auto;
+}
+.header-top .box-content .box-1{
+    width: 20%;
+    height: 40px;
+    float: left;
+    
+}    
+.header-top .box-content .box-2{
+    width: 12%;
+    height: 40px;
+    
+    float: left;
+}   
+.header-top .box-content .box-2 .content{
+    width: 95%;
+    height: 40px;
+    background: orange;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+.header-top .box-content .box-2 p{
+    margin: 0px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+.header-top .box-content .box-1 img{
+    width: 100%;
+    height: 40px;
+}
+.header-top .box-content .box-3{
+    width: 25%;
+    height: 40px;
+    background-color: aqua;
+    float: left;
+    margin-left:  20px;
+    margin-right: 40px;
+    position: relative;
+}
+.header-top .box-content .box-3 input{
+    width: 100%;
+    height: 99%;
+    border: none;
+    outline:  none;
+    padding-left: 20px;
+    border-radius: 4px;
+    
+}
+.header-top .box-content .box-3 i{
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    font-size: 25px;
+    color: black;
+}    
+.header-top .box-content .box-4{
+    width: 7%;
+    height: 40px;
+    margin-right: 18px;
+    float: left;
+    text-align: center;
+    
+}    
+.header-top .box-content .box-4 .box-4-content{
+    width: 95%;
+    height: 40px;
+    background-color: orange;
+    margin:  0 auto;
+    border-radius: 4px;
+}    
+.header-top .box-content .box-4 .box-4-content span{
+    font-size: 12px;
+    line-height: 12px;
+}
+.header-top .box-content .box-5{
+    width: 9%;
+    height: 40px;
+    background-color: orange;
+    float: left;
+    position: relative;
+    border-radius: 4px;
+}        
+.header-top .box-content .box-5 i{
+    position: absolute;
+    top:10px;
+    left: 0;
+    font-size: 25px;
+    color: black;
+    margin-left: 5px;
+}
+.header-top .box-content .box-5 span{
+    position: absolute;
+    top:15px;
+    left: 40px;
+    font-size: 13px; 
+    font-weight: bold;  
+}
+.header-top .box-content .box-6{
+    width: 8%;
+    height: 40px;
+    border-right: 1px solid gray;
+    float: left;
+    text-align: center;
+}   
+.header-top .box-content .box-7{
+    width: 6%;
+    height: 40px;
+    border-right: 1px solid gray;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+}  
+.header-top .box-content .box-8{
+    width: 6%;
+    height: 40px;
+    
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+}    
+/* ---------------------------HEADER-ICON----------------------------- */
+.header-icon{
+    width: 100%;
+    height: 50px;
+    background-color:  #ffd400;
+}
+.header-icon .header-icon-content{
+    width: 80%;
+    height: 40px;
+    background-color: #ffd400;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+}   
+.header-icon .header-icon-content a{
+    text-decoration: none;
+    color: black;
+}
+
+/*--------------------------------IFRAME--------------------------------*/
+.iframePage{
+    width:100%;
+}    
+iframe{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 1000px;
+    overflow:auto;
+}  
+
+  
+
+
+   
+
+
+

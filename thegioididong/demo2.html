@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse:  collapse;
+            margin: 100px auto;
+        }
+        th{
+            width: 100px;
+            height: 100px;
+            font-size: 50px;
+        }
+        .win{
+            background-color: red;
+        }
+        .back{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th column="0" row="0"></th>
+            <th column="0" row="1"></th>
+            <th column="0" row="2"></th>
+        </tr>
+        <tr>
+            <th column="1" row="0"></th>
+            <th column="1" row="1"></th>
+            <th column="1" row="2"></th>
+        </tr>
+        <tr>
+            <th column="2" row="0"></th>
+            <th column="2" row="1"></th>
+            <th column="2" row="2"></th>
+        </tr>
+    </table>
+</body>
+<script>
+
+    
+    var Arrth = [
+        [" "," "," "],
+        [" "," "," "],
+        [" "," "," "]
+    ]
+    var th = document.querySelectorAll('th');
+    var tr = document.querySelectorAll("tr")
+    var count = 0;
+    th.forEach((x) =>{
+        x.onclick = () =>{
+            count++;
+            if(count%2!=0){
+                x.innerHTML = "X"
+                x.style.color = "blue"
+                x.setAttribute("onclick","")
+                 
+            }
+            else{
+                x.innerHTML = "O"
+                x.style.color = "red"
+                x.setAttribute("onclick","")
+                
+                
+            }    
+            Arrth[x.getAttribute('column')][x.getAttribute('row')] = x.innerHTML
+            for(var r =0;r<3;r++){
+                if(Arrth[r][0] && Arrth[r][1] == "X" && Arrth[r][1] && Arrth[r][2] == "X" && Arrth[r][0] != " "){
+                    for(let i =0;i<3;i++){
+                        alert("X win")
+                        break;
+                    }    
+                    return
+                }    
+                if(Arrth[r][0] && Arrth[r][1] == "O" && Arrth[r][1] && Arrth[r][2] == "O" && Arrth[r][0] != " "){
+                    for(let i =0;i<3;i++){
+                        alert("O win")
+                        break;
+                    }    
+                    return
+                }    
+                    
+                
+            }
+            for(var c =0;c<3;c++){
+                if(Arrth[0][c] && Arrth[1][c] == "X" && Arrth[1][c] && Arrth[2][c] == "X" && Arrth[0][c] != " "){
+                    for(let i =0;i<3;i++){
+                        alert("X win");
+                        break;
+                    }
+                    return
+                }
+                if(Arrth[0][c] && Arrth[1][c] == "O" && Arrth[1][c] && Arrth[2][c] == "O" && Arrth[0][c] != " "){
+                    for(let i =0;i<3;i++){
+                        alert("O win");
+                        break;
+                    }
+                    return
+                }
+            }
+            if(Arrth[0][0] && Arrth[1][1] == "X" && Arrth[1][1] && Arrth[2][2] == "X" && Arrth[0][0] != " "){
+                for(let i = 0;i<3;i++){
+                    alert("X win");
+                    break;
+                }
+                return
+            }
+            if(Arrth[0][0] && Arrth[1][1] == "O" && Arrth[1][1] && Arrth[2][2] == "O" && Arrth[0][0] != " "){
+                for(let i = 0;i<3;i++){
+                    alert("O win");
+                    break;
+                }
+                return
+            }
+            if(Arrth[0][2] == Arrth[1][1] && Arrth[1][1] == Arrth[2][0] && Arrth[0][2] != " "){
+                for(let i = 0;i<3;i++){
+                    alert("Ok");
+                    break;
+                }
+                return
+            }
+            if(count == 9){
+                alert("Draw")
+            }
+            
+                
+            
+        }
+        
+    })
+    
+     
+</script>
+</html>
