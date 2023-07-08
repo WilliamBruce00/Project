@@ -2,18 +2,18 @@
     <form action="" method="post" id="formLogin">
         <h2>FORM LOGIN</h2>
         <div class="formLogin-row1">
-            <label>Username</label><br>
-            <input type="text" /><i class="fa-solid fa-user"></i><br>
+            <label>Email</label><br>
+            <input type="text" name="email"/><i class="fa-solid fa-user"></i><br>
             <label>Password</label><br>
-            <input type="password"><i class="fa-solid fa-eye"></i>    
+            <input type="password" name="password"><i class="fa-solid fa-eye"></i>    
         </div>
         <div class="formLogin-row2">
             <input type="checkbox"><span>Remember me?</span>
             <a href="">Forgot Password?</a>
         </div>
         <div class="formLogin-row3">
-            <p style="text-align: center;"><input type="button" value="Login"></p>
-            <p style="color:#fff; padding-bottom: 20px;">Not a member?<a href="">Register here</a></p>
+            <p style="text-align: center;"><input type="button" value="Login" name="submitLogin"></p>
+            <p style="color:#fff; padding-bottom: 20px;">Not a member?<a href="../index.php?page=signup">Register here</a></p>
         </div>
     </form>
 </div>
@@ -25,26 +25,20 @@
     $(document).ready(() =>{
         for(let i = 0;i<document.querySelector(".formLogin-row1").children.length;i++){
             document.querySelector(".formLogin-row1").children[i].onfocus = (e) =>{
-                $(`.formLogin-row1 [type=${e.target.getAttribute("type")}]`).attr("type") == "text" 
+                $(`.formLogin-row1 [name=${e.target.getAttribute("name")}]`).attr("name") == "email"
                     ? $(".formLogin-row1 label:eq(0)").css({"top": label1[0],"color": color[0]}) 
-                    : $(".formLogin-row1 label:eq(1)").css({"top": label2[0],"color": color[0]});
+                    : $(".formLogin-row1 label:eq(1)").css({"top": label2[0],"color": color[0]});console.log(e.target.getAttribute("name"))
             }
             document.querySelector(".formLogin-row1").children[i].onblur = (e) =>{
-                $(`.formLogin-row1 [type=${e.target.getAttribute("type")}]`).val() == "" && $(`.formLogin-row1 [type=${e.target.getAttribute("type")}]`).attr("type") == "text"
+                $(`.formLogin-row1 [name=${e.target.getAttribute("name")}]`).val() == "" && $(`.formLogin-row1 [type=${e.target.getAttribute("type")}]`).attr("type") == "text"
                     ? $(".formLogin-row1 label:eq(0)").css({"top": label1[1],"color": color[1]}) 
-                    : ($(`.formLogin-row1 [type=${e.target.getAttribute("type")}]`).val() == "" && $(`.formLogin-row1 [type=${e.target.getAttribute("type")}]`).attr("type") == "password"
+                    : ($(`.formLogin-row1 [name=${e.target.getAttribute("name")}]`).val() == "" && $(`.formLogin-row1 [type=${e.target.getAttribute("type")}]`).attr("type") == "password"
                         ? $(".formLogin-row1 label:eq(1)").css({"top": label2[1],"color": color[1]}) 
                         : "");
-                    
-                
             }
         }
         $(".fa-eye").click(() =>{
-            $(".formLogin-row1 input:eq(1)").attr("type",type.reverse()[0]) 
+            $(".formLogin-row1 input:eq(1)").attr("type",type.reverse()[0]) ;
         })    
-            
-        
-            
-        
     })
 </script>

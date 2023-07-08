@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/economy.css">
     <link rel="stylesheet" href="./css/details.css">
     <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/signup.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -33,6 +34,7 @@
                     case "filter": include("./frontend/filter.php");break;
                     case "details": include("./frontend/details.php");break;
                     case "login": include("./frontend/login.php");break;
+                    case "signup": include("./frontend/signup.php");break;
                 }        
                 
                 

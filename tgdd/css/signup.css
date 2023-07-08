@@ -1,0 +1,54 @@
+.box-signup {
+  width: 80%;
+  margin: 20px auto;
+}
+#formSignup {
+  width: 40%;
+  background-color: black;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 15px;
+  padding-bottom: 20px;
+  box-shadow: 5px 10px 10px gray;
+}
+#formSignup input {
+  width: 80%;
+  height: 40px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  background-color: transparent;
+  box-shadow: 0 0 5px #fff;
+  color: #fff;
+  margin: 0 auto;
+}
+#formSignup button {
+  height: 40px;
+  width: 50%;
+  margin: 20px auto;
+  outline: none;
+  border: none;
+  background-color: #1e90ff;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 5px;
+}
+#formSignup h2 {
+  text-align: center;
+  padding: 10px 0px;
+  color: #fff;
+  padding-bottom: 40px;
+}
+#formSignup p {
+  height: 20px;
+  color: red;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+#formSignup a {
+  text-decoration: none;
+  color: #1e90ff;
+}
