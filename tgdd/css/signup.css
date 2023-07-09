@@ -23,6 +23,7 @@
   box-shadow: 0 0 5px #fff;
   color: #fff;
   margin: 0 auto;
+  position: relative;
 }
 #formSignup button {
   height: 40px;
@@ -51,4 +52,24 @@
 #formSignup a {
   text-decoration: none;
   color: #1e90ff;
+}
+#formSignup i {
+  color: #fff;
+  position: absolute;
+  right: 590px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+#formSignup i:nth-child(3) {
+  top: 255px;
+}
+#formSignup i:nth-child(6) {
+  top: 325px;
+}
+#formSignup i:nth-child(9) {
+  top: 390px;
+}
+#formSignup i:nth-child(12) {
+  top: 455px;
 }

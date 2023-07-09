@@ -1,11 +1,8 @@
 
-    
-
 <?php 
     $sql = "SELECT * FROM combo";
     $result = mysqli_query($conn,$sql);
     $data = mysqli_fetch_all($result,MYSQLI_ASSOC);
-    
 ?>
 <?php 
     $sql_new = "SELECT * FROM kinhte ORDER BY id DESC limit 4";

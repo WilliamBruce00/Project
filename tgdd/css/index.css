@@ -51,6 +51,7 @@ body {
   padding: 5px 20px;
   font-weight: bold;
   border-radius: 5px;
+  cursor: pointer;
 }
 .header__content--user a:hover {
   background-color: gray;

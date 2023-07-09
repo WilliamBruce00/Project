@@ -1,3 +1,12 @@
+<?php 
+    $login = "<a href='../index.php?page=login'><i class='fa-solid fa-right-to-bracket' style='margin-right:5px;'></i>Login</a>";
+    $signup = "<a href='../index.php?page=signup'><i class='fa-solid fa-user-plus' style='margin-right:5px;'></i>Sign up</a>";
+
+    
+    
+        
+?>
+
 <div class="header">
     <div class="header__content">
         <div class="header__content--logo">
@@ -12,8 +21,6 @@
         </div>
         <div class="header__content--user">
             <p>
-                <a href="../index.php?page=login"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
-                <a href=""><i class="fa-solid fa-user-plus"></i> Sign up</a>
             </p>
         </div>
     </div>    
@@ -35,3 +42,24 @@
         </p>
     </div>
 </div>
+<script>
+    $(document).ready(() =>{
+        if(localStorage.getItem("user") === null){
+            $(".header__content--user p").html(
+                "<a href='../index.php?page=login'><i class='fa-solid fa-right-to-bracket' style='margin-right:5px;'></i>Login</a><a href='../index.php?page=signup'><i class='fa-solid fa-user-plus' style='margin-right:5px;'></i>Signup</a>"
+            )    
+        }else{
+            $(".header__content--user p").html(
+                `<a href='../index.php?page=login'><i class='fa-solid fa-user' style='margin-right:5px;'></i>${localStorage.getItem("user")}</a><a><i class='fa-solid fa-right-from-bracket' style='margin-right:5px;'></i>Logout</a>`
+            )
+        }
+        $(".header__content--user p").html().match("Logout") !== null ? $(".header__content--user p a:eq(1)").click((e) =>{
+            localStorage.removeItem("user");
+            location.reload();
+        }) : "";
+    })
+            
+            
+                
+    
+</script>
