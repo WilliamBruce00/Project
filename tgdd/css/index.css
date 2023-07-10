@@ -45,7 +45,7 @@ body {
 }
 .header__content--user a {
   text-decoration: none;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #000;
   background-color: #fff;
   padding: 5px 20px;

@@ -1,0 +1,17 @@
+#formChangePass {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+#formChangePass input {
+  height: 30px;
+  padding-left: 10px;
+}
+#formChangePass button {
+  width: 25%;
+  height: 30px;
+}
+#formChangePass p {
+  height: 20px;
+  color: red;
+}

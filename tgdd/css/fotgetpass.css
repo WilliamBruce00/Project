@@ -1,0 +1,31 @@
+.box-fotget {
+  width: 80%;
+  margin: 0 auto;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#formFotget {
+  width: 40%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 5px gray;
+}
+#formFotget input {
+  width: 90%;
+  height: 40px;
+  padding-left: 10px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+#formFotget button {
+  width: 100px;
+  height: 35px;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 5px;
+}

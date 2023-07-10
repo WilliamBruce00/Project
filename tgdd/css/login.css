@@ -74,6 +74,10 @@
   border: none;
   font-size: 20px;
   margin-bottom: 30px;
+  cursor: pointer;
+}
+.formLogin-row3 input:hover {
+  opacity: 0.7;
 }
 .formLogin-row2 span {
   color: #fff;

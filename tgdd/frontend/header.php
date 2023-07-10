@@ -50,13 +50,15 @@
             )    
         }else{
             $(".header__content--user p").html(
-                `<a href='../index.php?page=login'><i class='fa-solid fa-user' style='margin-right:5px;'></i>${localStorage.getItem("user")}</a><a><i class='fa-solid fa-right-from-bracket' style='margin-right:5px;'></i>Logout</a>`
+                `<a href='../index.php?page=profile&pagachild=user&user=${localStorage.getItem("user")}'><i class='fa-solid fa-user' style='margin-right:5px;'></i>${localStorage.getItem("user")}</a><a><i class='fa-solid fa-right-from-bracket' style='margin-right:5px;'></i>Logout</a>`
             )
         }
         $(".header__content--user p").html().match("Logout") !== null ? $(".header__content--user p a:eq(1)").click((e) =>{
             localStorage.removeItem("user");
-            location.reload();
+            location.href = "../index.php"
         }) : "";
+            
+        
     })
             
             
