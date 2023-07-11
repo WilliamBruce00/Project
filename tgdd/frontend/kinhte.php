@@ -7,27 +7,6 @@
     
 ?>
 
-<?php
-    
-    
-?>
-        
-      
-    
-    
-         
-        
-            
-        
-                
-            
-              
-        
-     
-        
-            
-     
-
 
 
 <div class="box-economy">

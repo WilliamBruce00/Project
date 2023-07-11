@@ -16,8 +16,8 @@ $a = array_filter($arr, function($b){
     }
 ?>
 <?php 
-    sleep(4);
-    echo "Hello";
+    
+
 ?>
 <form action="" method="post">
     <select name="select" id="">

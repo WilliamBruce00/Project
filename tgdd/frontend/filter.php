@@ -6,13 +6,13 @@
         $row_of_page = 8;
         $total_page = ($_GET["pages"] - 1) * $row_of_page;
 
-        $row_number = mysqli_num_rows(mysqli_query($conn,"SELECT * FROM kinhte WHERE category = 'kinh te'"));
+        $row_number = mysqli_num_rows(mysqli_query($conn,"SELECT * FROM kinhte WHERE category = 'kinhte'"));
         $href_number = ceil($row_number / 8);
     
         $_GET["pages"] == $href_number ? $next = $href_number : $next = $_GET["pages"] + 1;
         $_GET["pages"] == 1 ? $previous = 1 : $previous = $_GET["pages"] - 1;
 
-        $sql = "SELECT * FROM kinhte WHERE category = 'kinh te' ORDER BY id DESC limit $total_page,$row_of_page";
+        $sql = "SELECT * FROM kinhte WHERE category = 'kinhte' ORDER BY id DESC limit $total_page,$row_of_page";
         $result = mysqli_query($conn,$sql);
         $kinhte = mysqli_fetch_all($result,MYSQLI_ASSOC);
 
@@ -72,13 +72,13 @@
         $row_of_page = 8;
         $total_page = ($_GET["pages"] - 1) * $row_of_page;
         $arr = explode(",",$_GET["p"]);
-        $row_number = mysqli_num_rows(mysqli_query($conn,"SELECT * FROM kinhte WHERE category = 'blockchain' AND CONVERT(price,int) BETWEEN '$arr[0]' AND '$arr[1]'"));
+        $row_number = mysqli_num_rows(mysqli_query($conn,"SELECT * FROM kinhte WHERE category = '{$_GET['page']}' AND CONVERT(price,int) BETWEEN '$arr[0]' AND '$arr[1]'"));
         $href_number = ceil($row_number / 8);
     
         $_GET["pages"] == $href_number ? $next = $href_number : $next = $_GET["pages"] + 1;
         $_GET["pages"] == 1 ? $previous = 1 : $previous = $_GET["pages"] - 1;
 
-        $sql = "SELECT * FROM kinhte WHERE category = 'blockchain' AND CONVERT(price,int) BETWEEN '$arr[0]' AND '$arr[1]' limit $total_page,$row_of_page";
+        $sql = "SELECT * FROM kinhte WHERE category = '{$_GET['page']}' AND CONVERT(price,int) BETWEEN '$arr[0]' AND '$arr[1]' limit $total_page,$row_of_page";
         $result = mysqli_query($conn,$sql);
         $kinhte = mysqli_fetch_all($result,MYSQLI_ASSOC);
         empty($kinhte) ? $message = "Khong tim thay ket qua" : "";
