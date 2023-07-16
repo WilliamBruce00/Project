@@ -1,0 +1,1 @@
+<?php $data_user = $data->getData("SELECT * FROM users")?>

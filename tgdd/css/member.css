@@ -1,0 +1,18 @@
+.box-member {
+  width: 80%;
+  margin: 0 auto;
+}
+tr:nth-child(1) > th:nth-child(2) {
+  width: 300px;
+}
+tr:nth-child(1) > th:nth-child(4) {
+  width: 300px;
+}
+tr:nth-child(2) > th:nth-child(5),
+tr:nth-child(2) > th:nth-child(6) {
+  width: 200px;
+}
+:where(tr) > th:nth-child(5),
+th:nth-child(6) {
+  text-align: center;
+}

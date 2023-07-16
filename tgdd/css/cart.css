@@ -1,0 +1,86 @@
+.box-cart {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  /* box-shadow: 0 0 5px gray; */
+}
+.box-cart .p {
+  width: 100%;
+  display: flex;
+  margin-bottom: 5px;
+  border: 1px solid black;
+}
+.box-cart .p img {
+  width: 115px;
+  height: 169px;
+}
+.box-cart .p button {
+  width: 30px;
+  height: 30px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+.box-cart .p button:hover {
+  background-color: red;
+  color: white;
+}
+.box-cart .p p:nth-child(2) {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-cart .p p:nth-child(3) {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-cart .p p:nth-child(4) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-cart .p button {
+  transform: translateX(1000%);
+  margin-top: 70px;
+}
+.box-cart .p span {
+  background-color: whitesmoke;
+  font-size: 18px;
+  margin: 0px 5px;
+  /* box-shadow: 0 0 5px gainsboro; */
+}
+.box-cart .p p:nth-child(3) span:nth-child(2) {
+  font-size: 15px;
+  padding: 5px 10px;
+}
+:where(
+    .box-cart .p p:nth-child(3) span:nth-child(1),
+    .box-cart .p p:nth-child(3) span:nth-child(3)
+  ) {
+  padding: 0 20px;
+}
+.box-pay {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 0px;
+  font-size: 17px;
+}
+.box-pay button {
+  margin-left: 20px;
+  outline: none;
+  border: none;
+  background-color: orange;
+  color: #fff;
+  width: 130px;
+  height: 40px;
+}
+.box-cart .p p:nth-child(3) span {
+  cursor: pointer;
+}

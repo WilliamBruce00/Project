@@ -75,15 +75,33 @@ $(document).ready(() => {
             border: "1px solid red",
           }))
         : "";
-      console.log(element);
     });
-    isNaN(product.price) && !product.price.match("," || ".")
+    $("#formAddProduct input:eq(2)").val().match(",") ||
+    $("#formAddProduct input:eq(2)").val().match(".")
+      ? ($("#formAddProduct input:eq(2)").val(
+          $("#formAddProduct input:eq(2)").val().replaceAll(",", "")
+        ),
+        $("#formAddProduct input:eq(2)").val(
+          $("#formAddProduct input:eq(2)").val().replaceAll(".", "")
+        ))
+      : "";
+    !$("#formAddProduct input:eq(2)").val().match(",")
+      ? $("#formAddProduct input:eq(2)").val(
+          parseInt($("#formAddProduct input:eq(2)").val())
+            .toLocaleString()
+            .replaceAll(",", ".")
+        )
+      : "";
+    $("#formAddProduct input:eq(2)")
+      .val()
+      .match(/^[A-Za-z]+$/)
       ? ($("#formAddProduct p:eq(2)").html("Please enter number").css({
           "color:": "red",
           //   "margin-bottom": "6px",
         }),
         $("#formAddProduct input:eq(2)").css({ border: "1px solid red" }))
-      : "";
+      : $("#formAddProduct p:eq(2)").html("");
+
     document.querySelector("select").onchange = (e) => {
       e.target.value != "" ? $("#formAddProduct p:eq(9)").html("") : "";
     };

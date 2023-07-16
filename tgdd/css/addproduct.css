@@ -1,10 +1,11 @@
-.add-product {
+.add-product,
+.update-product {
   width: 600px;
 
   background-color: #fff;
   box-shadow: 0 0 5px gray;
-  position: absolute;
-  top: -75%;
+  position: fixed;
+  top: -400px;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: all 0.2s linear;
@@ -36,12 +37,14 @@
   margin: 0 auto;
   padding: 0px 20px;
 }
-#formAddProduct {
+#formAddProduct,
+#formUpdateProduct {
   width: 100%;
   height: 100%;
   padding: 0px 10px;
 }
-#formAddProduct input[type="text"] {
+#formAddProduct input[type="text"],
+#formUpdateProduct input[type="text"] {
   width: 100%;
   height: 30px;
   padding-left: 10px;
@@ -52,7 +55,8 @@
   height: 100px;
   padding-left: 10px;
 }
-#formAddProduct button {
+#formAddProduct button,
+#formUpdateProduct button {
   border: none;
   outline: none;
   padding: 10px 20px;
@@ -64,4 +68,60 @@
 }
 #formAddProduct p {
   height: 20px;
+}
+#formUpdateProduct p {
+  height: 10px;
+}
+tr:nth-child(2n) {
+  background-color: gainsboro;
+}
+.update {
+  background-color: #4ba6ff;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.remove {
+  background-color: red;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.product-href {
+  width: 95%;
+  margin: 10px auto;
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.product-href a {
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+}
+.product-href a:hover {
+  background-color: #4ba6ff;
+  color: #fff;
+}
+.product-href .m0 {
+  background-color: #4ba6ff;
+  color: #fff;
+}
+:where(
+    .update,
+    .remove,
+    .btnAdd,
+    #formAddProduct button,
+    #formUpdateProduct button
+  ):hover {
+  opacity: 0.5;
 }
