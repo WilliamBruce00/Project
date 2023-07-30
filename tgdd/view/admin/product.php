@@ -1,11 +1,4 @@
 <?php 
-    // if(isset($_GET['id'])){
-    //     $sql_remove = "DELETE FROM listbook WHERE id = {$_GET['id']}";
-    //     $result_remove = mysqli_query($conn,$sql_remove);
-    //     if($result_remove){
-    //         echo "<script>location.href = '../admin.php?page=product&ofpage={$_GET['ofpage']}'</script>";
-    //     }
-    // }
     include("./controller/delete_product.php");
 ?>
 <div class="product">
@@ -32,16 +25,7 @@
 <?php include("addproduct.php")?>
 <?php include("updateproduct.php")?>
 <div class="product-href">
-    <span style="margin-right: 5px;">Page <?php echo $_GET["ofpage"]?> of <?php echo $href_number?> </span>
-    <a href="../admin.php?page=product&ofpage=<?php echo $previous?>"><i class="fa-solid fa-angle-left"></i></a>
-        <?php 
-            $key = $_GET["ofpage"];
-            for($i=1;$i<=$href_number;$i++){
-                $key = $key - 1;
-                echo "<a class='m$key' href='../admin.php?page=product&ofpage=$i'>$i</a>";
-            }
-        ?>
-    <a href="../admin.php?page=product&ofpage=<?php echo $next?>"><i class="fa-solid fa-angle-right"></i></a>
+    <?php include("./controller/href.php")?>
 </div>
 <script>
     let arrTop = ["370px","-400px"];

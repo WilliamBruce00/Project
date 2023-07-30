@@ -1,6 +1,6 @@
 <?php 
     if(isset($_GET["id"])){
-        $data = $data->getData("SELECT * FROM listbook WHERE id = '{$_GET['id']}'");
+        $data = $data->getData("SELECT * FROM listbook WHERE id = '{$_GET['id']}'")->fetch_all(MYSQLI_ASSOC);
     }
 ?>
 
@@ -58,8 +58,6 @@
         <p style="font-size: 17px;line-height: 25px;"><?php echo $data[0]['intro']?></p>
     </div>
 </div>
-<script src="../js/pay.js"></script>
-
 <script>
    
     $(document).ready(() =>{
@@ -82,5 +80,9 @@
                 location.href = "../index.php?page=login";
             }  
         })
+        $(".btn-2 button:eq(1)").click(() =>{
+            location.href = `../index.php?page=order&name=${$(".wrap-left-right p:eq(0) span:eq(1)").html()}&price=${$(".info-pay span:eq(1)").html()}&userss=${$(".header__content--user p a:eq(0)").html().replace('<i class="fa-solid fa-user" style="margin-right:5px;"></i>','')}&quan=${$(".number").html()}`;
+        })
+        console.log($(".number").html())
     })
 </script>

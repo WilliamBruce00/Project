@@ -1,0 +1,13 @@
+table {
+    border-collapse: collapse;
+}
+tr {
+    height: 30px;
+}
+th {
+    font-weight: 500;
+}
+.box-profile-right table tr:nth-child(1) {
+    background-color: #000ff0;
+    color: #fff;
+}

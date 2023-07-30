@@ -23,6 +23,7 @@
 .wrap-left-left img {
   width: 120%;
   height: 80%;
+  box-shadow: 10px 10px 15px gray;
 }
 .wrap-left-right {
   width: 65%;
@@ -87,4 +88,9 @@
 }
 .btn-2 button:hover {
   opacity: 0.7;
+}
+.btn-2 a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
 }

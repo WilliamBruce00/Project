@@ -1,0 +1,36 @@
+.box-order {
+  width: 80%;
+  margin: 0 auto;
+}
+#formOrder {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  padding-top: 30px;
+  background-color: #fff;
+  border: 1px solid gray;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+#formOrder input {
+  margin: 10px 0px;
+  height: 40px;
+  outline: none;
+  border: none;
+  padding-left: 10px;
+  box-shadow: 0 0 5px gainsboro;
+}
+#formOrder input[type="submit"],
+#formOrder input[type="button"] {
+  background-color: green;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+:where(#formOrder input[type="submit"], #formOrder input[type="button"]):hover {
+  opacity: 0.6;
+}
+#formOrder input::placeholder {
+  color: gray;
+}

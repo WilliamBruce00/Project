@@ -43,7 +43,7 @@
     </div>
     <br>
     <div class="main__row3--product">
-        <?php include("./controller/deal.php")?> 
+        <?php include("./controller/deal.php") ?>
     </div>
     <div class="controls">
         <i class="fa-solid fa-angle-left"></i>
@@ -93,7 +93,5 @@
         ?>
     </div>
 </div>
-<hr>
-<script src="../js/watch.js"></script>
-<script src="../js/slide.js"></script>
-
+<script src="../../js/watch.js"></script>
+<script src="../../js/slide.js"></script>

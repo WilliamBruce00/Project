@@ -32,8 +32,8 @@
                         <li><a href="./admin.php"><i class="fa-solid fa-house" style="margin-right: 5px;"></i>Trang chủ</a></li>
                         <li><a href="./admin.php?page=member"><i class="fa-solid fa-users" style="margin-right: 5px;"></i>Thành viên</a></li>
                         <li><a href="./admin.php?page=product&ofpage=1"><i class="fa-solid fa-table-cells-large" style="margin-right: 5px;"></i>Sản phẩm</a></li>
-                        <li><a href=""><i class="fa-solid fa-table-cells" style="margin-right: 5px;"></i>Combo</a></li>
-                        <li><a href=""><i class="fa-solid fa-table-list" style="margin-right: 5px;"></i>Đặt hàng</a></li>
+                        <!-- <li><a href=""><i class="fa-solid fa-table-cells" style="margin-right: 5px;"></i>Combo</a></li> -->
+                        <li><a href="./admin.php?page=orde"><i class="fa-solid fa-table-list" style="margin-right: 5px;"></i>Đặt hàng</a></li>
                     </ul>
                 </div>
             </div>
@@ -46,6 +46,8 @@
                 }
                 else if(isset($_GET['page']) && $_GET['page'] == "product"){
                     include("./view/admin/product.php");
+                }else if(isset($_GET['page']) && $_GET['page'] == "orde"){
+                    include("./view/admin/order.php");
                 }
                 else{
                     include("./view/admin/main.php");

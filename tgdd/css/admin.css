@@ -1,189 +1,206 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  font-family: "Montserrat", "Open Sans", sans-serif;
-  font-size: 14px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-size: 14px;
 }
 .container {
-  width: 100%;
-  display: flex;
+    width: 100%;
+    display: flex;
 }
 .main {
-  width: 100%;
+    width: 100%;
 }
 .header {
-  width: 100%;
-  background-color: #1e90ff;
-  height: 100px;
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  padding: 0px 200px;
+    width: 100%;
+    background-color: #1e90ff;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 0px 200px;
 }
 .header img {
-  width: 70px;
-  height: 70px;
+    width: 70px;
+    height: 70px;
 }
 .header i {
-  font-size: 25px;
-  color: #fff;
+    font-size: 25px;
+    color: #fff;
 }
 .house {
-  width: 100%;
-  height: 50px;
-  padding-left: 20px;
-  padding-top: 20px;
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    padding-top: 20px;
 }
 .wrap {
-  width: 100%;
+    width: 100%;
 }
 .main {
-  padding: 20px;
+    padding: 20px;
 }
 .house i {
-  font-size: 25px;
-  color: #fff;
-  background-color: #1e90ff;
-  padding: 5px;
+    font-size: 25px;
+    color: #fff;
+    background-color: #1e90ff;
+    padding: 5px;
 }
 .main-bottom {
-  width: 100%;
-  height: 200px;
+    width: 100%;
+    height: 200px;
 }
 .main-bottom-box {
-  width: 80%;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  margin: 0 auto;
-  column-gap: 30px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 0 auto;
+    column-gap: 30px;
 }
 .box-item {
-  background-color: #1e90ff;
-  box-shadow: 5px 10px 10px gray;
-  height: 200px;
-  border-radius: 5px;
-  padding: 20px;
+    background-color: #1e90ff;
+    box-shadow: 5px 10px 10px gray;
+    height: 200px;
+    border-radius: 5px;
+    padding: 20px;
 }
 .box-item i {
-  font-size: 60px;
-  width: 70px;
-  height: 70px;
+    font-size: 60px;
+    width: 70px;
+    height: 70px;
 }
 .box-item p {
-  font-size: 25px;
-  font-weight: bold;
-  width: 160px;
-  margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    width: 160px;
+    margin-bottom: 10px;
 }
 aside {
-  width: 0px;
-  height: 740px;
-  background-color: #fff;
-  box-shadow: 0 0 5px gray;
-  transition: all 0.25s linear;
+    width: 0px;
+    height: 740px;
+    background-color: #fff;
+    box-shadow: 0 0 5px gray;
+    transition: all 0.25s linear;
 }
 aside .aside-box {
-  width: 100%;
-  text-align: center;
-  display: none;
+    width: 100%;
+    text-align: center;
+    display: none;
 }
 .aside-box .close {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 .aside-box .img {
-  margin-top: 20px;
-  width: 100px;
-  height: 70px;
+    margin-top: 20px;
+    width: 100px;
+    height: 70px;
 }
 .aside-box .content {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 .aside-box .content ul li {
-  list-style: none;
-  width: 200px;
-  margin: 15px 0px;
-  text-align: left;
-  font-weight: bold;
+    list-style: none;
+    width: 200px;
+    margin: 15px 0px;
+    text-align: left;
+    font-weight: bold;
 }
 .aside-box .content ul li a {
-  text-decoration: none;
-  color: #000;
+    text-decoration: none;
+    color: #000;
 }
 .aside-box .img img {
-  display: block;
-  width: 70px;
-  height: 100%;
+    display: block;
+    width: 70px;
+    height: 100%;
 }
 table {
-  border-collapse: collapse;
-  width: 100%;
+    border-collapse: collapse;
+    width: 100%;
 }
 table tr > th:nth-child(1) {
-  width: 50px;
+    width: 50px;
 }
 table tr > th:nth-child(2) {
-  width: 170px;
+    width: 100px !important;
 }
 table tr > th:nth-child(3) {
-  width: 300px;
+    width: 300px;
 }
 table tr > th:nth-child(4) {
-  width: 100px;
+    width: 100px;
 }
 table tr > th:nth-child(5) {
-  width: 250px;
+    width: 100px !important;
 }
 table tr > th:nth-child(6),
 table tr > th:nth-child(7),
 table tr > th:nth-child(8) {
-  width: 120px;
+    width: 120px;
 }
 table tr > th:nth-child(9),
 table tr > th:nth-child(10),
 table tr > th:nth-child(11) {
-  width: 90px;
+    width: 90px;
 }
 table tr:nth-child(1) > th:nth-child(12) {
-  text-align: center;
+    text-align: center;
 }
 table tr:nth-child(2) > th:nth-child(12),
 table tr:nth-child(2) > th:nth-child(13) {
-  width: 120px;
+    width: 120px;
 }
 
 table tr > th:nth-child(12),
 table tr > th:nth-child(13) {
-  text-align: center;
+    text-align: center;
 }
 table th {
-  text-align: left;
-  padding-left: 10px;
-  height: 40px;
-  font-weight: 500;
+    /* text-align: left; */
+    /* padding-left: 10px; */
+    height: 40px;
+    font-weight: 500;
 }
 table tr:nth-child(1) {
-  background-color: #00fff0;
-  color: #000;
+    background-color: #00fff0;
+    color: #000;
 }
 .product button {
-  margin-bottom: 20px;
-  outline: none;
-  border: none;
-  background-color: gold;
-  padding: 10px 20px;
-  color: #fff;
-  font-weight: bold;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    background-color: gold;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
 }
 .product {
-  width: 100%;
-  padding: 0px 40px;
-  margin-top: 20px;
+    width: 100%;
+    padding: 0px 40px;
+    margin-top: 20px;
+}
+.box-order {
+    margin: 10px auto;
+    padding: 0 20px;
+}
+.box-order table tr th:nth-child(11) {
+    width: 250px;
+}
+.box-order table tr th:nth-child(6) {
+    width: 70px;
+}
+
+.box-order table tr th:nth-child(5) {
+    width: 400px !important;
+}
+.box-order table tr th:nth-child(3) {
+    width: 180px;
 }

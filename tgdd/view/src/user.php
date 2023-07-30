@@ -1,6 +1,5 @@
 <?php 
-
-$data_user = $data->getData("SELECT * FROM users WHERE username = '{$_GET['user']}'")
+    $data_user = $data->getData("SELECT * FROM users WHERE username = '{$_GET['user']}'")
 ?>
 <div class="box-user">
     <h2>THÔNG TIN TÀI KHOẢN</h2>

@@ -1,4 +1,3 @@
-
 <div class="box-economy">
     <div class="box-economy-filter filter">
         <div class="filter-sort">
@@ -36,16 +35,8 @@
             }    
         ?>        
         <a href='../index.php?page=<?php echo $_GET['page']?>&pages=<?php echo $next."&p={$_GET['p']}"?>'><i class="fa-solid fa-angle-right"></i></a>
-
-
-            
-        
-        
-            
-        
     </div>
 </div>
-
 <script>
     $(document).ready(() =>{
         $(".filter select").change((e) =>{
@@ -54,13 +45,6 @@
             b === undefined ? b = "" : "";
             console.log($(".filter button a").attr("href",`../index.php?page=<?php echo $_GET['page']?>&p=${a},${b}`))
         })        
-                    
-
-                
-            
-        
-        
-        
     })
 </script>
     

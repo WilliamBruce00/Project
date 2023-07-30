@@ -1,7 +1,8 @@
 <?php 
     if(isset($_POST["submitSignup"])){
-        if($data->addUser($_POST['user'],$_POST['email'],$_POST['pass'])){
-            echo "<script>window.location.href = '../index.php'</script>";
-        }
+        $data->table('users');
+        $data->column("username","email","password");
+        $data->Add($_POST['user'],$_POST['email'],$_POST['pass']);
+        $data->direction("'../index.php'");
     }
 ?>

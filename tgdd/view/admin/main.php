@@ -21,16 +21,10 @@
             </div>
             <div class="box-item">
                 <p>
-                    <i class="fa-solid fa-table-cells"></i>
-                </p>
-                <p>Combo</p>
-                <p><?php echo $total_combo[0]['count']?></p>
-            </div>
-            <div class="box-item">
-                <p>
                     <i class="fa-solid fa-table-list"></i>
                 </p>
-                <p>Đơn Đặt hàng</p>
+                <p>Đơn hàng</p>
+                <p><?php echo $total_order[0]['count']?></p>
             </div>
         </div>
     </div>
